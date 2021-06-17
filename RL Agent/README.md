@@ -5,7 +5,7 @@ The only piece of error handling that needs to be taken into account when doing 
 
 Discussion on the community discord allowed me to minimize my experimentation with feature engineering by getting a sense of what parameters yielded the best results in the long run. Thus, the optimal model uses the differential sharpe ratio as the reward function, the log differences of the open, close, high, low and volume as well as the predicted values in the stream, and looks at a historical window of 160 time units in order to make decisions. For the sake of expediency, I deployed an earlier model using net worth as the reward function, because the differential sharpe ratio yields exceedingly long training times.
 
-# [Ray RL Mod.ipynb(https://github.com/Gary-McC/TraderbotFinal/blob/main/RL%20Agent/Ray%20RL%20Mod.ipynb)
+# [Ray RL Mod.ipynb](https://github.com/Gary-McC/TraderbotFinal/blob/main/RL%20Agent/Ray%20RL%20Mod.ipynb)
 
 This notebook contains the example code used to train the initial agent on one year of data. The training was done in a notebook as opposed to a script for experimentation purposes. The default reward scheme is currently set to Simple Profit for ease of use on the users end, however using Diff_Sharpe yields better results with significantly longer training times.
 
