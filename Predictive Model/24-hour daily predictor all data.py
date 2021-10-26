@@ -537,7 +537,7 @@ for i in today_pred:
         today.append(1)
 csvfiller(['Date','Low','High','Open','Close'],Coin)
 csvfiller(today, Coin)
-tomorrow_pred=model.predict(today_pred)
+tomorrow_pred=model.predict(test_data[-seq_len:])
 tomorrow=[(datetime.today()+timedelta(days=1)).strftime('%m_%d_%Y')]
 for i in tomorrow_pred:
     if i<= 0.5:
